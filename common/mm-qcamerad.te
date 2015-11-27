@@ -61,3 +61,4 @@ binder_call(mm-qcamerad, mmi);
 
 # /data/fdAlbum
 allow mm-qcamerad camera_data_file:file create_file_perms;
+type_transition mm-qcamerad system_data_file:file camera_data_file "fdAlbum";
